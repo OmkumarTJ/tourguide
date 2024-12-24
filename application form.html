@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html>
+<title>SkyLine-ApplyForm</title>
+<link rel="icon" type="image/x-icon" href="/project/skyline.png">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<style>
+body,h1,h2,h3,h4,h5,h6,p
+{
+  font-family: "Raleway", sans-serif
+}
+
+body{
+  margin:0;
+  padding:0; 
+ font-family: "Raleway", sans-serif
+}
+
+.box
+{
+  border-style: ridge;
+  background-color:white;
+  color:red;
+  left:35%;
+  top:5%;
+  position:absolute;
+  box-sizing: border-box;
+  padding: 70px 30px; 
+}
+.user
+{
+  width: 100px;
+  height: 100px;
+  position:absolute;
+  top:-50%;
+  left: calc(50%-50px);
+}
+.mugavari
+{
+border:1px solid;
+      padding: 8px;
+    display: block;
+    border: none;
+    border: 1px solid #ccc;
+    width: 100%;
+    height:150px;
+}
+input[type=text]
+{
+  border-style: solid;
+  width:100%;
+  height:40px;
+}
+
+input[type=email]
+{
+  border-style: solid;
+  width:100%;
+  height:40px;
+}
+input[type=file]
+{
+  border-style:groove;
+  width:100%;
+  height:40px;
+}
+input[type=number]
+{
+  border-style: solid;
+  width:100%;
+  height:40px;
+}
+
+input[type=date]
+{
+  border-style: solid;
+  width:100%;
+  height:40px;
+}
+
+
+
+</style>
+<body>
+  <div class="box">
+  <h3 style="text-align: center;">Application Form (Become a guide)</h3>
+  <p style="text-align: center; font-size: large;">Fill up this form and finally submit</p>
+ 
+  <div style="margin-top:48px">
+    <form name="application form" action="Pappform.php" method="post" autocomplete="off" enctype="multipart/form-data">
+
+      <label>Name</label>
+      <p><input type="text" name="Name" placeholder="Enter Name"  required=""></p>
+
+      <label>Gender</label>
+      
+     <p style="border-style:groove; width:100%;height:40px;">
+      <input type="radio"   name="Gender" value="male" required="">Male
+      <input type="radio"  name="Gender" value="female" required="">Female
+      <input type="radio"  name="Gender" value="transgender" required="">Transgender
+      </p>    
+
+      <label>Date of birth</label>
+      <p><input type="date"  name="Dob"></p>
+
+      <label>Blood group</label>
+      <p><input type="text" name="Bloodgroup" placeholder="Enter Bloodgroup" required=""></p>
+
+      <label>Age</label>
+      <p><input type="number" name="Age" placeholder="Enter Age"  required=""></p>
+
+      <label>Native place</label>
+      <p><input type="text" name="Nativeplace" placeholder="Enter Native place" required=""></p>
+      
+      <label>Current Address:</label><br><br>
+
+      <label>Door No/Flat No</label>
+      <p><input type="text" name="DoorNO" placeholder="Enter Door Number"  required=""></p>
+
+      <label>Street/Apartment</label>
+      <p><input type="text" name="Street" placeholder="Enter Your Street/Apartment Name"  required=""></p>
+      
+      <label>Area</label>
+      <p><input type="text" name="Area" placeholder="Enter Your Area"  required=""></p>
+      
+      <label>City</label>
+      <p><input type="text" name="City" placeholder="Enter Your City"  required=""></p>
+      
+      <label>Pincode</label>
+      <p><input type="number" name="Pincode" placeholder="Enter Your Pincode"  required=""></p>
+
+      <label>State</label>
+      <p><input type="text" name="State" placeholder="Enter Your State"  required=""></p>
+
+      <label>Phone number</label>
+      <p><input type="number" name="Phonenumber" placeholder="Enter Your Phone Number" required=""></p>
+      
+      <label>Email</label>
+      <p><input type="email" name="Email" placeholder="Enter Email" required=""></p>
+      
+      <label>Known Languages</label>
+      <p><input type="text" name="Language" placeholder="Enter Language" required=""></p>
+      
+      <label>Highest qualification</label>
+      <p><input type="text" name="Qualification" placeholder="Enter Highest qualification"  required=""></p>
+      
+      <label>Extra skill</label>
+      <p><input type="text" name="Skill" placeholder="Enter Extra skill" required=""></p>
+      
+      <label>Previous job experience</label>
+      <p><input type="text" name="Experience" placeholder="Enter Previous job experience" required=""></p>
+
+      <label>Upload your photo</label>
+      <p><input type="file" name="photo" placeholder="photo" required=""></p>
+      
+      <label>Upload your aadhar card</label>
+      <p><input type="file" name="proof" placeholder="proof" required=""></p>
+
+      <p>
+        <button class="w3-button w3-black" type="submit" name="submit">
+        <i class="fa fa-sign-in" aria-hidden="true"></i> SUBMIT
+        </button>
+        <button class="w3-button w3-black" type="reset" name="reset" id="resetbutton">
+        <i class="fa fa-refresh" aria-hidden="true"></i> RESET
+      </button>
+      </p>
+
+      <a href="loginSG.html">back to login page</a>
+    </form>
+  </div>
+</div>
+<script>
+
+
+  </script>
+</body>
+</html>
+ 
+
+
+
+

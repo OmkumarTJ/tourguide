@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html>
+<title>SkyLine-LoginSG</title> 
+ <link rel="icon" type="image/x-icon" href="/project/skyline.png">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<style>
+body,h1,h2,h3,h4,h5,h6,p
+{
+  font-family: "Raleway", sans-serif
+}
+
+body{
+  background-image: url("log.gif");
+ background-blend-mode: lighten;
+ font-family: "Raleway", sans-serif
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.box
+{
+  box-shadow: 5px 10px #888888;
+  border-radius:10px;
+  background-color: #ffffcc;
+  color:#20304f;
+  top:2%;
+  left:40%;
+  position:absolute;
+  box-sizing: border-box;
+  padding: 70px 30px; 
+  width:30%;
+}
+.user
+{
+  border-radius:50px;
+   width:100px;
+   margin-left:135px;
+}
+
+
+/* Add Zoom Animation */
+#animate {
+  -webkit-animation: animatezoom 0.6s;
+  animation: animatezoom 0.6s
+}
+
+@-webkit-keyframes animatezoom {
+  from {-webkit-transform: scale(0)} 
+  to {-webkit-transform: scale(1)}
+}
+  
+@keyframes animatezoom {
+  from {transform: scale(0)} 
+  to {transform: scale(1)}
+}
+
+
+.btn
+{
+  border: 2px solid green;
+  color:#000000;
+   border-radius:10px;
+  background-color:    #b3ffb3;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 15px;
+  transition: 1s;
+
+}
+.btn:hover
+{
+  background:#4e00fe;
+  color:white;
+  font-size: 15px;
+  border: 2px solid white;
+}
+input[type]
+{
+  border-style: groove;
+  width:100%;
+  height:40px;
+}
+
+</style>
+<body>
+  
+  <div class="box" id="animate">
+    <img src="user1.png" class="user"></img>
+  <h3 class="w3-center">LOGIN HERE </h3>
+  <p class="w3-center w3-large">Become A Tour Guide</p>
+  <div style="margin-top:48px">
+    
+    <form name="myform" action="PloginSG.php" method="post">
+      <p>Username</p><input type="text" name="Username" placeholder="Enter Username"  required name="Username"></p>
+      <p>Password</p><input type="password" name="password" placeholder="Enter Password" required name="Password"></p>
+      <div id="errorbox"></div>
+      <p>
+        <button class="btn" type="submit" name="haha">
+        <i class="fa fa-sign-in" aria-hidden="true"></i>  LOGIN
+        </button>
+      </p>
+      <a href="regSG.html">Register for new account?</a>
+    </form>
+  </div>
+</div>
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+ 
+
+
+
+
+
+

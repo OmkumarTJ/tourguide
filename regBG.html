@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html>
+<title>SkyLine-RegistrationBG</title>
+ <link rel="icon" type="image/x-icon" href="/project/skyline.png">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<style>
+body,h1,h2,h3,h4,h5,h6,p
+{
+  font-family: "Raleway", sans-serif
+}
+
+body{
+  margin:0;
+  padding:0; 
+background-image: url("reg.gif");
+ font-family: "Raleway", sans-serif;
+  background-position:center;
+  background-repeat: no-repeat;
+  background-size:25%;
+}
+
+.box
+{
+  box-shadow: 5px 10px #888888;
+  border-radius:10px;
+  
+  background-color:  #b3ffff;
+  color:#20304f;
+  top:2%;
+  left:40%;
+  bottom:2%;
+  position:absolute;
+  box-sizing:border-box;
+  padding: 70px 30px; 
+  width:30%;
+
+}
+.user
+{
+  width: 100px;
+  height: 100px;
+  position:absolute;
+  top:-50%;
+  left: calc(50%-50px);
+}
+
+
+.btn
+{
+  border: 2px solid #0000ff;
+  color:#000000;
+   border-radius:10px;
+  background-color: #ffff99;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 15px;
+  transition: 1s;
+
+}
+/* .btn:hover
+{
+  background:#4e00fe;
+  color:white;
+  font-size: 15px;
+  } */
+  
+input[type]
+{
+  border-style: groove;
+  width:100%;
+  height:40px;
+}
+</style>
+<body>
+  <div class="box">
+    <img src="travel.jfif" class="user">
+  <h3><center>REGISTRATION</center></h3>
+ <p style="text-align: center; font-size: large;">Book A Tour Guide</p>
+  <div style="margin-top:48px">
+    <form name="myform" action="PregBG.php" method="post">
+      <p>Email</p><input type="Email" name="email" placeholder="Enter Email"  required=""></p>
+      <p>Username</p><input type="text" name="username" placeholder="Enter Username"  required=""></p>
+      <p>Password</p><input type="password" name="password1" placeholder="Enter Password" required="" id="firstpassword"></p><p>
+      <p>Retype Password</p><input type="password" name="password2" placeholder="Again Enter Password" required="" id="secondpassword"></p>
+        <button class="btn" type="submit" name="hai" id="submitbutton">
+        <i class="fa fa-sign-in" aria-hidden="true"></i>  LOGIN
+        </button>
+      </p>
+      <a href="loginBg.html">Exixting user, login!?</a>
+    </form>
+  </div>
+</div>
+<script>
+
+  setInterval(myfunction,1000);
+
+
+  function myfunction(){
+    let firstpass = document.getElementById('firstpassword').value;
+    let secondpass = document.getElementById('secondpassword').value;
+    if(firstpass==secondpass){
+      document.getElementById('submitbutton').disabled=false;
+    }
+    else{
+    document.getElementById('submitbutton').disabled=true;
+    }
+  }
+  </script>
+</body>
+</html>
+
+ 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
